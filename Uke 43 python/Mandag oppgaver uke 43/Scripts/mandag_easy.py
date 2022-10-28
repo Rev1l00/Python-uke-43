@@ -45,3 +45,10 @@ year = ['january', 'february', 'mars', 'april', 'may', 'june', 'july', 'august',
 '''opprett en funksjon som printer KUN de elementene av variabel "prime_tall" som IKKE er partall.  '''
 prime_tall = [1, 3, 2, 5, 8, 49, 0, 15, 212, 13, 176, 21, 7, 29, 20, 14]
 
+def is_prime(prime_tall):
+  for number in prime_tall:
+    for i in range(2,int(math.sqrt(number))+1):
+        if (number%i) == 0:
+            print(number)
+
+is_prime(prime_tall)
